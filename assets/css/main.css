@@ -150,10 +150,6 @@
 		font-style: italic;
 	}
 
-	p {
-		margin: 0 0 2rem 0;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 600;
@@ -658,7 +654,6 @@
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
 			width: 100%;
 		}
 
@@ -730,9 +725,7 @@
 				padding: 0 0.75em 0 0;
 			}
 
-				ul.icons li:last-child {
-					padding-right: 0;
-				}
+
 
 				ul.icons li a {
 					border-radius: 100%;
@@ -1594,7 +1587,7 @@
 		}
 
 /* Ajouts Gomar */
-/*
+
 .gomardos {
 		text-align: right;
 		}
@@ -1611,7 +1604,7 @@
 
 .item {
     position: relative;
-    float: left;
+    display:inline-block;
 }
 
 .item p {
@@ -1628,7 +1621,7 @@ svg {
 
 .circle_animation {
   stroke-dasharray: 360; /* this value is the pixel circumference of the circle */
-/*  stroke-dashoffset: 360;
+  stroke-dashoffset: 360;
 }
 
 .fr .circle_animation {
@@ -1658,10 +1651,10 @@ svg {
 
 @-webkit-keyframes fr {
   to {
-    stroke-dashoffset: 0; /* 50% would be 220 (half the initial value specified above) 
+    stroke-dashoffset: 0; /* 50% would be 220 (half the initial value specified above) */
   }
-}*/
-/*
+}
+
 @keyframes fr {
   to {
     stroke-dashoffset: 0;
@@ -1670,13 +1663,13 @@ svg {
 
 @-webkit-keyframes en {
   to {
-    stroke-dashoffset: 72;
+    stroke-dashoffset: 36;
   }
 }
 
 @keyframes en {
   to {
-    stroke-dashoffset: 72;
+    stroke-dashoffset: 36;
   }
 }
 
@@ -1694,114 +1687,79 @@ svg {
 
 @-webkit-keyframes it {
   to {
-    stroke-dashoffset: 216;
+    stroke-dashoffset: 180;
   }
 }
 
 @keyframes it {
   to {
-    stroke-dashoffset: 216;
+    stroke-dashoffset: 180;
   }
 }
 
 @-webkit-keyframes esp {
   to {
-    stroke-dashoffset: 288;
+    stroke-dashoffset: 270;
   }
 }
 
 @keyframes esp {
   to {
-    stroke-dashoffset: 288;
+    stroke-dashoffset: 270;
   }
-}*//*/
-
-/* Max plays with circles */
-
-.donut-chart svg {
-	pointer-events: none;
-  height: 100%;
-}
-.donut-chart svg path {
-	fill: none;
-	stroke-width: 35px;
-	stroke: #19a8ff;
-}
-			
-.donut-chart {
-	width: 100px;
-	height: 100px;
-	position: relative;
-	display: inline-block;
-}
-.donut-chart p {
-	margin: 0;
-	position: absolute;
-	top: 35%;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 2em;
-}
-.donut-chart span {
-	display: block;
-	font-size: 0.5em;
 }
 
-.item {
-    position: relative;
-    display:inline-block;
-     /*float: left;*/
-}
-
-.item h2 {
-    text-align:center;
-    position: absolute;
-    line-height: 140px;
+.align-skills {
+    margin: auto;
     width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-svg {
-    transform: rotate(-90deg);
+.poulet {
+	margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-.circle_animation {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
+.img-profil {
+    border-radius: 50%;
 }
 
-.html .circle_animation {
-    -webkit-animation: html 1s ease-out forwards;
-    animation: html 1s ease-out forwards;
+.lol {
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 2px;
 }
 
-.css .circle_animation {
-    -webkit-animation: css 1s ease-out forwards;
-    animation: css 1s ease-out forwards;
+.txt-profil {
+	text-align:left;
 }
 
-@-webkit-keyframes html {
-  to {
-    stroke-dashoffset: 80;
-  }
-}
-
-@keyframes html {
-  to {
-    stroke-dashoffset: 80;
-  }
-}
-
-@-webkit-keyframes css {
-  to {
-    stroke-dashoffset: 160;
-  }
-}
-
-@keyframes css {
-  to {
-    stroke-dashoffset: 160;
-  }
+.rotate6{ /*leaning right -> */
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    display: block;
+    margin: auto;
 }
 
 
+.txt-intro {
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 12px;
+}
+
+.skillsdef {
+	text-align: right;
+    font-variant: small-caps;
+    font-family: Arial;
+}
