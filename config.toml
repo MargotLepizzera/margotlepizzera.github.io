@@ -1,0 +1,26 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Margot Lepizzera'
+theme = "hallo"
+
+[params.colors]
+        background = "#81c6ff"
+        foreground = "#edf7ff"
+        hover = "#ffba82"
+
+[Author]
+    name = "Margot Lepizzera"
+
+[params]
+    [[params.links]]
+        icon = "linkedin"
+        title = "LinkedIn"
+        url = "https://www.linkedin.com/in/margot-lepizzera/"
+    [[params.links]]
+        icon = "github"
+        title = "GitHub"
+        url = "https://github.com/MargotLepizzera/"
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/MargotGsrd"
